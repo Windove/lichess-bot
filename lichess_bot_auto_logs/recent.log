@@ -1,0 +1,398 @@
+2023-09-11 22:45:15,838 __main__ (lichess-bot.py:998) INFO 
+    .   _/|
+    .  // o\
+    .  || ._)  lichess-bot 2023.9.6.2
+    .  //__\
+    .  )___(   Play on Lichess with a bot
+    
+2023-09-11 22:45:15,863 config (config.py:259) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/Lc0
+  name: lc0.exe
+  working_dir: ''
+  protocol: uci
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: 14
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  opponent_allow_tos_violation: false
+  challenge_mode: random
+  challenge_filter: none
+
+2023-09-11 22:45:15,864 config (config.py:260) DEBUG ====================
+2023-09-11 22:45:15,870 config (config.py:259) DEBUG Config:
+token: logger
+url: https://lichess.org/
+engine:
+  dir: ./engines/Lc0
+  name: lc0.exe
+  working_dir: C:\Users\Lukas R. Thrane\Desktop\Chess AI\lichess-bot
+  protocol: uci
+  ponder: true
+  polyglot:
+    enabled: false
+    book:
+      standard:
+      - engines/book1.bin
+      - engines/book2.bin
+    min_weight: 1
+    selection: weighted_random
+    max_depth: 20
+  draw_or_resign:
+    resign_enabled: false
+    resign_score: -1000
+    resign_for_egtb_minus_two: true
+    resign_moves: 3
+    offer_draw_enabled: true
+    offer_draw_score: 0
+    offer_draw_for_egtb_zero: true
+    offer_draw_moves: 10
+    offer_draw_pieces: 10
+  online_moves:
+    max_out_of_book_moves: 10
+    max_retries: 2
+    chessdb_book:
+      enabled: false
+      min_time: 20
+      move_quality: good
+      min_depth: 20
+    lichess_cloud_analysis:
+      enabled: false
+      min_time: 20
+      move_quality: best
+      max_score_difference: 50
+      min_depth: 20
+      min_knodes: 0
+    lichess_opening_explorer:
+      enabled: false
+      min_time: 20
+      source: masters
+      player_name: ''
+      sort: winrate
+      min_games: 10
+    online_egtb:
+      enabled: false
+      min_time: 20
+      max_pieces: 7
+      source: lichess
+      move_quality: best
+  lichess_bot_tbs:
+    syzygy:
+      enabled: false
+      paths:
+      - engines/syzygy
+      max_pieces: 7
+      move_quality: best
+    gaviota:
+      enabled: false
+      paths:
+      - engines/gaviota
+      max_pieces: 5
+      min_dtm_to_consider_as_wdl_1: 120
+      move_quality: best
+  homemade_options: null
+  uci_options:
+    Move Overhead: 100
+    Threads: 4
+    Hash: 512
+    SyzygyPath: ./syzygy/
+    UCI_ShowWDL: true
+  silence_stderr: false
+  uci_ponder: false
+abort_time: 30
+fake_think_time: false
+rate_limiting_delay: 0
+move_overhead: 2000
+correspondence:
+  move_time: 60
+  checkin_period: 300
+  disconnect_time: 150
+  ponder: false
+  uci_ponder: false
+challenge:
+  concurrency: 1
+  sort_by: best
+  accept_bot: true
+  only_bot: false
+  max_increment: 20
+  min_increment: 0
+  max_base: 1800
+  min_base: 0
+  max_days: 14
+  min_days: 1
+  variants:
+  - standard
+  time_controls:
+  - bullet
+  - blitz
+  - rapid
+  - classical
+  modes:
+  - casual
+  - rated
+  bullet_requires_increment: false
+  block_list: []
+  allow_list: []
+greeting:
+  hello: Hi! I'm {me}. Good luck! Type !help for a list of commands I can respond
+    to.
+  goodbye: Good game!
+  hello_spectators: Hi! I'm {me}. Type !help for a list of commands I can respond
+    to.
+  goodbye_spectators: Thanks for watching!
+matchmaking:
+  allow_matchmaking: false
+  challenge_variant: random
+  challenge_timeout: 30
+  challenge_initial_time:
+  - 60
+  - 180
+  challenge_increment:
+  - 1
+  - 2
+  opponent_rating_difference: 300
+  opponent_allow_tos_violation: false
+  challenge_mode: random
+  challenge_filter: none
+  block_list: []
+  challenge_days:
+  - null
+  opponent_min_rating: 600
+  opponent_max_rating: 4000
+  overrides: {}
+pgn_file_grouping: game
+
+2023-09-11 22:45:15,870 config (config.py:260) DEBUG ====================
+2023-09-11 22:45:15,871 __main__ (lichess-bot.py:1001) INFO Checking engine configuration ...
+2023-09-11 22:45:15,874 engine_wrapper (engine_wrapper.py:66) DEBUG Starting engine: ['C:\\Users\\Lukas R. Thrane\\Desktop\\Chess AI\\lichess-bot\\engines\\Lc0\\lc0.exe']
+2023-09-11 22:45:15,874 asyncio (proactor_events.py:624) DEBUG Using proactor: IocpProactor
+2023-09-11 22:45:15,879 chess.engine (engine.py:1040) DEBUG <UciProtocol (pid=4392)>: Connection made
+2023-09-11 22:45:15,880 chess.engine (engine.py:1062) DEBUG <UciProtocol (pid=4392)>: << uci
+2023-09-11 22:45:15,891 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> id name Lc0 v0.30.0
+2023-09-11 22:45:15,891 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> id author The LCZero Authors.
+2023-09-11 22:45:15,891 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name WeightsFile type string default <autodiscover>
+2023-09-11 22:45:15,891 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name Backend type combo default blas var blas var eigen var trivial var random var check var recordreplay var roundrobin var multiplexing var demux
+2023-09-11 22:45:15,891 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name BackendOptions type string default 
+2023-09-11 22:45:15,891 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name Threads type spin default 2 min 1 max 128
+2023-09-11 22:45:15,891 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name NNCacheSize type spin default 2000000 min 0 max 999999999
+2023-09-11 22:45:15,891 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MinibatchSize type spin default 7 min 1 max 1024
+2023-09-11 22:45:15,891 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MaxPrefetch type spin default 0 min 0 max 1024
+2023-09-11 22:45:15,892 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name CPuct type string default 1.745000
+2023-09-11 22:45:15,892 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name CPuctBase type string default 38739.000000
+2023-09-11 22:45:15,892 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name CPuctFactor type string default 3.894000
+2023-09-11 22:45:15,892 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name TwoFoldDraws type check default true
+2023-09-11 22:45:15,892 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name VerboseMoveStats type check default false
+2023-09-11 22:45:15,892 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name FpuStrategy type combo default reduction var reduction var absolute
+2023-09-11 22:45:15,892 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name FpuValue type string default 0.330000
+2023-09-11 22:45:15,892 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name CacheHistoryLength type spin default 0 min 0 max 7
+2023-09-11 22:45:15,892 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name PolicyTemperature type string default 1.359000
+2023-09-11 22:45:15,892 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MaxCollisionEvents type spin default 917 min 1 max 65536
+2023-09-11 22:45:15,892 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MaxCollisionVisits type spin default 80000 min 1 max 100000000
+2023-09-11 22:45:15,892 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MaxCollisionVisitsScalingStart type spin default 28 min 1 max 100000
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MaxCollisionVisitsScalingEnd type spin default 145000 min 0 max 100000000
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MaxCollisionVisitsScalingPower type string default 1.250000
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name OutOfOrderEval type check default true
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MaxOutOfOrderEvalsFactor type string default 2.400000
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name StickyEndgames type check default true
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name SyzygyFastPlay type check default false
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MultiPV type spin default 1 min 1 max 500
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name PerPVCounters type check default false
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name ScoreType type combo default WDL_mu var centipawn var centipawn_with_drawscore var centipawn_2019 var centipawn_2018 var win_percentage var Q var W-L var WDL_mu
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name HistoryFill type combo default fen_only var no var fen_only var always
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MovesLeftMaxEffect type string default 0.034500
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MovesLeftThreshold type string default 0.800000
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MovesLeftSlope type string default 0.002700
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MovesLeftConstantFactor type string default 0.000000
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MovesLeftScaledFactor type string default 1.652100
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MovesLeftQuadraticFactor type string default -0.652100
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MaxConcurrentSearchers type spin default 1 min 0 max 128
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name DrawScore type string default 0.000000
+2023-09-11 22:45:15,893 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name ContemptMode type combo default play var play var white_side_analysis var black_side_analysis var disable
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name Contempt type string default 
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name WDLCalibrationElo type string default 0.000000
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name WDLEvalObjectivity type string default 1.000000
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name WDLDrawRateReference type string default 0.500000
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name NodesPerSecondLimit type string default 0.000000
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name SolidTreeThreshold type spin default 100 min 1 max 2000000000
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name TaskWorkers type spin default 0 min 0 max 128
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MinimumProcessingWork type spin default 20 min 2 max 100000
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MinimumPickingWork type spin default 1 min 1 max 100000
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MinimumRemainingPickingWork type spin default 20 min 0 max 100000
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MinimumPerTaskProcessing type spin default 8 min 1 max 100000
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name IdlingMinimumWork type spin default 0 min 0 max 10000
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name ThreadIdlingThreshold type spin default 1 min 0 max 128
+2023-09-11 22:45:15,894 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name UCI_Opponent type string default 
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name UCI_RatingAdv type string default 0.000000
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name SearchSpinBackoff type check default false
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name SyzygyPath type string default 
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name Ponder type check default true
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name UCI_Chess960 type check default false
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name UCI_ShowWDL type check default false
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name UCI_ShowMovesLeft type check default false
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name ConfigFile type string default lc0.config
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name SmartPruningFactor type string default 1.330000
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name SmartPruningMinimumBatches type spin default 0 min 0 max 10000
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name RamLimitMb type spin default 0 min 0 max 100000000
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name MoveOverheadMs type spin default 200 min 0 max 100000000
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name TimeManager type string default legacy
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> option name LogFile type string default 
+2023-09-11 22:45:15,895 chess.engine (engine.py:1088) DEBUG <UciProtocol (pid=4392)>: >> uciok
+2023-09-11 22:45:15,896 __main__ (lichess-bot.py:1066) ERROR Quitting lichess-bot due to an error:
+Traceback (most recent call last):
+  File "C:\Users\Lukas R. Thrane\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\chess\engine.py", line 1555, in _setoption
+    value = self.options[name].parse(value)
+  File "C:\Users\Lukas R. Thrane\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\chess\engine.py", line 2002, in __getitem__
+    return self._store[key.lower()][1]
+KeyError: 'move overhead'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Lukas R. Thrane\Desktop\Chess AI\lichess-bot\lichess-bot.py", line 1063, in <module>
+    start_lichess_bot()
+  File "C:\Users\Lukas R. Thrane\Desktop\Chess AI\lichess-bot\lichess-bot.py", line 1002, in start_lichess_bot
+    with engine_wrapper.create_engine(CONFIG):
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\contextlib.py", line 119, in __enter__
+    return next(self.gen)
+  File "C:\Users\Lukas R. Thrane\Desktop\Chess AI\lichess-bot\engine_wrapper.py", line 67, in create_engine
+    engine = Engine(commands, options, stderr, cfg.draw_or_resign, cwd=cfg.working_dir)
+  File "C:\Users\Lukas R. Thrane\Desktop\Chess AI\lichess-bot\engine_wrapper.py", line 458, in __init__
+    self.engine.configure(options)
+  File "C:\Users\Lukas R. Thrane\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\chess\engine.py", line 2960, in configure
+    return future.result()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\_base.py", line 446, in result
+    return self.__get_result()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\concurrent\futures\_base.py", line 391, in __get_result
+    raise self._exception
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.9_3.9.3568.0_x64__qbz5n2kfra8p0\lib\asyncio\tasks.py", line 479, in wait_for
+    return fut.result()
+  File "C:\Users\Lukas R. Thrane\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\chess\engine.py", line 1587, in configure
+    return await self.communicate(UciConfigureCommand)
+  File "C:\Users\Lukas R. Thrane\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\chess\engine.py", line 1133, in communicate
+    return await command.result
+  File "C:\Users\Lukas R. Thrane\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\chess\engine.py", line 1379, in _start
+    self.start(engine)
+  File "C:\Users\Lukas R. Thrane\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\chess\engine.py", line 1582, in start
+    engine._configure(options)
+  File "C:\Users\Lukas R. Thrane\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\chess\engine.py", line 1577, in _configure
+    self._setoption(name, value)
+  File "C:\Users\Lukas R. Thrane\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.9_qbz5n2kfra8p0\LocalCache\local-packages\Python39\site-packages\chess\engine.py", line 1557, in _setoption
+    raise EngineError("engine does not support option {} (available options: {})".format(name, ", ".join(self.options)))
+chess.engine.EngineError: engine does not support option Move Overhead (available options: WeightsFile, Backend, BackendOptions, Threads, NNCacheSize, MinibatchSize, MaxPrefetch, CPuct, CPuctBase, CPuctFactor, TwoFoldDraws, VerboseMoveStats, FpuStrategy, FpuValue, CacheHistoryLength, PolicyTemperature, MaxCollisionEvents, MaxCollisionVisits, MaxCollisionVisitsScalingStart, MaxCollisionVisitsScalingEnd, MaxCollisionVisitsScalingPower, OutOfOrderEval, MaxOutOfOrderEvalsFactor, StickyEndgames, SyzygyFastPlay, MultiPV, PerPVCounters, ScoreType, HistoryFill, MovesLeftMaxEffect, MovesLeftThreshold, MovesLeftSlope, MovesLeftConstantFactor, MovesLeftScaledFactor, MovesLeftQuadraticFactor, MaxConcurrentSearchers, DrawScore, ContemptMode, Contempt, WDLCalibrationElo, WDLEvalObjectivity, WDLDrawRateReference, NodesPerSecondLimit, SolidTreeThreshold, TaskWorkers, MinimumProcessingWork, MinimumPickingWork, MinimumRemainingPickingWork, MinimumPerTaskProcessing, IdlingMinimumWork, ThreadIdlingThreshold, UCI_Opponent, UCI_RatingAdv, SearchSpinBackoff, SyzygyPath, Ponder, UCI_Chess960, UCI_ShowWDL, UCI_ShowMovesLeft, ConfigFile, SmartPruningFactor, SmartPruningMinimumBatches, RamLimitMb, MoveOverheadMs, TimeManager, LogFile)
